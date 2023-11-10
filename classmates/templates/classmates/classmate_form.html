@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classmate Edit</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}">
+<form method="post" class="form-container">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
